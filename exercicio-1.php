@@ -7,7 +7,7 @@
     <title>Exercício</title>
 </head>
 <body>
-    
+
 <?php 
 
 $data = "26/04/2022";
@@ -18,7 +18,7 @@ $cidade = "São Paulo";
 
 ?>
 <p>
-    hoje é <?=$data;?>. <?=$nome;?> tem <?=$idade;?> anos e nasceu em <?=$cidade?>
+    hoje é <?=$data?>. <?=$nome?> tem <?=$idade?> anos e nasceu em <?=$cidade?>
 </p>
     
 </body>
