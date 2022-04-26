@@ -10,8 +10,10 @@
 
 <?php 
 
-$data = "26/04/2022";
+// $data = "26/04/2022";
+$data = date("d/m/Y");
 $nome = "Robson";
+// $idade = date("Y") - 2005;
 $idade = 35;
 $cidade = "São Paulo";
 

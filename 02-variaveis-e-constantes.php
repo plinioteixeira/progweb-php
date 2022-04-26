@@ -39,11 +39,11 @@
         define("MEU_NOME", "Plinio");
 
         // forma 2:
-        const ESCOLA = "Senac penha"
+        const ESCOLA = "Senac penha";
 
         // obs.: precisa concatenar (ponto .)
-        echo "<p>".MEU_NOME."</p>"
-        echo "<p>".ESCOLA."</p>"
+        echo "<p>".MEU_NOME."</p>";
+        echo "<p>".ESCOLA."</p>";
     ?>
         <p> <?=MEU_NOME?> </p>
         <p> <?=ESCOLA?> </p>
