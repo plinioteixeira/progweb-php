@@ -24,7 +24,7 @@
         "sexo" => "feminino"
     ]
 ?>
-<h1 style="text-align: center; text-shadow: 2px 2px 5px black;">Exercício 2</h1>
+<h1 style="text-align: center; text-shadow: 2px 2px 5px black; background-color: lightslategray; border-radius: 60px;">Exercício 2</h1>
 
 <p style="background-color: lightblue; box-shadow: 1px 1px 10px lightblue;"> Bom dia, boa tarde, boa moite meu nome é <b style="text-shadow: 3px 3px 4px black;"><?=$dados1["nome"]?></b> e tenho apenas <?=$dados1["idade"]?> anos ainda  se precisar contatar anote meu email, que seria <i style="text-shadow: 2px 2px 10px black;"><?=$dados1["email"]?></i> </p>
 
