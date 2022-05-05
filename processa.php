@@ -10,7 +10,17 @@
     <h1>processamento de dados</h1>
     <hr>
 
-    <?php 
+<?php 
+    if( empty($_POST["nome"]) || empty($_POST["email"]) /* || empty($_POST["idade"]) */ ){
+        ?>
+        <p style="color: red;">Por favor preencha nome e E-email!</p>;
+        <p><a href="08-formulario.html">Voltar</a></p>
+        <?php
+    } else { 
+
+
+
+
     /* echo "<pre>";
     var_dump($_POST);
     echo "</pre>"; */
@@ -49,6 +59,7 @@
         <li> Informativos: <?=$informativos?> </li>
         <li> Mensagem: <?=$mensagem?> </li>
     </ul>
-    
+<?php } //fim do else ?> 
+
 </body>
 </html>
