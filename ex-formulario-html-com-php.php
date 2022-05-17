@@ -44,7 +44,7 @@ descrever porque quer
     <div>
         
     <p>
-            <label for="preco">R$ </label>
+            <label for="preco">Preço R$<?=number_format($salario,2,",",".")?></label>
             <input type="number" name="preco" id="preco" min="100" max="10000">
             <option value="Preço"></option>
         </p>
