@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
 
-<!-- celular
+    <!-- celular
 samsung, penalty, natura, nestlé
 valor de 100 até 10000 acrescentando centavos
 quantidade de produtos 
 descrever porque quer -->
 
-<form action="" method="">
+    <form action="" method="">
         <p>
             <label for="nome">Nome do produto:</label>
             <input required type="text" name="nome" id="nome">
@@ -35,7 +37,34 @@ descrever porque quer -->
             <label for="nestlé">Nestlé</label>
 
         </div> -->
-        <div>
+        <?php
+        $fabricantes = ["Selecione um Fabricante" , "Samsung", "apple", "motorola", "xiome"]
+
+        ?>
+ <p>Selecione uma marca</p>
+        <article>
+        
+            <select>
+           
+                <?php
+                foreach ($fabricantes as $fabricante) {
+
+                ?>
+
+
+
+                    <option><?= $fabricante ?></option>
+
+
+                <?php } ?>
+            </select>
+
+        </article>
+
+
+
+
+        <!--   <div>
             <label for="fabricantes">Fabricantes:</label>
 
             <select name="fabricante" id="fabricante">
@@ -47,20 +76,22 @@ descrever porque quer -->
             </select>
         </div>
 
-        <div> 
+        <div>  -->
 
         <p>
             <label for="preco">Preço:</label>
-            <input type="number" name="preco" id="preco" min="100" max="10000">
+            <input type="number" name="preco" id="preco" min="100" 
+            step="0.01" placeholder="Ex:105.05"
+            max="10000">
         </p>
 
         </div>
         <div>
 
-        <p>
-            <label for="quantidade">Quantidade:</label>
-            <input type="number" name="quantidade" id="quantidade" min="0" max="50">
-        </p>
+            <p>
+                <label for="quantidade">Quantidade:</label>
+                <input type="number" name="quantidade" id="quantidade" min="0" max="50">
+            </p>
 
         </div>
 
@@ -71,6 +102,7 @@ descrever porque quer -->
         </p>
         <button type="submit" name="enviar">Enviar dados</button>
     </form>
-    
+
 </body>
+
 </html>
